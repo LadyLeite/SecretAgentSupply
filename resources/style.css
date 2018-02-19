@@ -1,0 +1,223 @@
+/* Universal styles */
+html{
+  font-size: 18px;
+  background-color: black;
+}
+
+body{
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+h1, h4{
+  font-weight: bold;
+}
+
+a{
+  color: white;
+  list-style: none;
+  text-decoration:none;
+}
+
+span{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.container{
+  width: 960px;
+  margin: 11px auto;
+}
+
+/* Header */
+  header{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+header span{
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+header img{
+  height: 1.5rem;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+/* New Arrivals Section */
+ .newArrivals{
+  background-image: url('../resources/mainbanner.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+ .bikes{
+  position: relative;
+  top: 9rem;
+  left: 6rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  background-color: black;
+  color: white;
+}
+
+.bikes h4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.bikes h2{
+  padding-top: 0.25rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 470px){
+  .newArrivals{
+    height: 15rem;
+  }
+
+  .bikes{
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+
+  .bikes h4{
+    font-size: 0.77rem;
+  }
+
+  .bikes h1{
+    font-size: 1rem;
+  }
+
+}
+
+/* Nav bar */
+nav{
+  width: 100%;
+  height: 2.5rem;
+  background-color: firebrick;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  nav ul{
+    display: none;
+  }
+
+  .mobile-nav{
+    display:block;
+    text-align: center;
+  }
+}
+
+/* products */
+.main{
+  background-color: white;
+  height: 28.5rem;
+  width: 100%;
+}
+
+.catalogue{
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0;
+}
+
+.featuredItems{
+  display: flex;
+  flex-direction: column;
+  height: 15rem;
+  width: 30%;
+  border: 4px solid black;
+}
+
+.featuredItems span{
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  height: 13rem;
+}
+
+.image img{
+  width: 70%;
+  height: 9rem;
+}
+
+.details{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 4rem;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.info span{
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .featuredItems{
+    width: 47%;
+  }
+
+   #glasses{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+
+  .featuredItems{
+    width: 90%;
+  }
+
+  #watch{
+    display: none;
+  }
+}
+/*footer */
+footer{
+  marfin-top: 4rem;
+  padding: 5rem 0;
+  text-align: left;
+}
+
+footer span{
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    text-align: center;
+  }
